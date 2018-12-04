@@ -1,5 +1,5 @@
 #include"标头.h"
-bool Graphlnk::removeEdge(int v1, int v2)//图上删一条边 
+bool Graphcnt::removeEdge(int v1, int v2)//图上删一条边 
 {
 	if (v1 != -1 && v2 != -1)
 	{

@@ -1,7 +1,7 @@
 #include"БъЭЗ.h"
-bool Graphlnk::removeVertex(int v)
+bool Graphcnt::removenode(int v)
 {
-	if (v<0 || v >= numVertices)
+	if (v<0 || v >= numnode)
 	{
 		return false;
 	}
@@ -12,7 +12,7 @@ bool Graphlnk::removeVertex(int v)
 	{
 		p = NodeTable[v].adj;
 		k = p->dest;
-		j = getVertexPos(k);
+		j = getnode(k);
 		s = NodeTable[j].adj;
 		t = NULL;
 		while (s != NULL &&s->dest != NodeTable[v].start)
@@ -30,16 +30,16 @@ bool Graphlnk::removeVertex(int v)
 		numEdges--;
 	}
 
-	numVertices--;
-	NodeTable[v].start = NodeTable[numVertices].start;
-	p = NodeTable[v].adj = NodeTable[numVertices].adj;
+	numnode--;
+	NodeTable[v].start = NodeTable[numnode].start;
+	p = NodeTable[v].adj = NodeTable[numnode].adj;
 	if (p != NULL)
 	{
 
-		s = NodeTable[getVertexPos(p->dest)].adj;
+		s = NodeTable[getnode(p->dest)].adj;
 		while (s != NULL)
 
-		if (getVertexPos(s->dest) == numVertices)
+		if (getnode(s->dest) == numnode)
 		{
 
 			s->dest = NodeTable[v].start; break;

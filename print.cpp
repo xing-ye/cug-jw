@@ -1,9 +1,9 @@
 #include"标头.h"
-void printPath(Graphlnk& G, int v, int dist[], int path[])
+void Print(Graphcnt& G, int v, int dist[], int path[])
 {
 	//输出path数组中存储的图G从顶点v到其余各顶点的路径和距离
 	cout << G.NodeTable[v].start << "的路由表为" << endl;
-	int i, j, k, n = G.numVertices;
+	int i, j, k, n = G.numnode;
 	int * d = new int[n];
 	for (i = 0; i<n; i++)
 	{

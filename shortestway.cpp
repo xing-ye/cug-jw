@@ -1,13 +1,13 @@
 #include"标头.h"
-void ShortestPath(Graphlnk& G, int v, int dist[], int path[])
+void shortestway(Graphcnt& G, int v, int dist[], int path[])
 {//Graph是一个带权有向图，本算法建立一个数组，dist[j],0<=j<n;是当前求到的从顶点v到顶点j的最短路径长度，同时用数组path存放求到的最短路径
-	int n = G.numVertices;
+	int n = G.numnode;
 	bool *S = new bool[n];
 	int i, j, k;
 	int w, min;
 	for (i = 0; i<n; i++)
 	{
-		dist[i] = G.getWeight(v, i);
+		dist[i] = G.getValue(v, i);
 		S[i] = false;
 
 		if (i != v && dist[i] <100)
@@ -34,7 +34,7 @@ void ShortestPath(Graphlnk& G, int v, int dist[], int path[])
 		S[u] = true;
 		for (k = 0; k<n; k++)
 		{
-			w = G.getWeight(u, k);
+			w = G.getValue(u, k);
 			if (S[k] == false && w <100 && dist[u] + w<dist[k])
 			{
 				dist[k] = dist[u] + w;
@@ -42,5 +42,5 @@ void ShortestPath(Graphlnk& G, int v, int dist[], int path[])
 			}
 		}
 	}
-	printPath(G, v, dist, path);
+	Print(G, v, dist, path);
 }
