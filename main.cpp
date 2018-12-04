@@ -13,7 +13,6 @@ int main()
 	string x = "";
 	string y = "";
 	string m = "";
-	string n = "";
 	int z;
 	while (fin.getline(line, sizeof(line)))
 	{
@@ -22,11 +21,10 @@ int main()
 		word >> y;//路由终点 
 		word >> z;//权值 
 		word >> m;//网络号 
-		word >> n;//子网掩码 
 		i = G.getnode(x);
 		j = G.getnode(y);
 		weight = z;
-		G.insertEdge(i, j, weight, m, n);
+		G.insertEdge(i, j, weight, m);
 	}
 
 	fin.clear();
@@ -41,7 +39,7 @@ int main()
 
 	while (a)
 	{
-		cout << "1.输入路由号显示路由表  2.删除一个结点  3.删除一条边 4.插入一条边 5.插入一个节点  6.退出" << endl;
+		cout << "    1.输入路由号显示路由表\n    2.删除一个结点\n    3.删除一条边\n    4.插入一条边\n    5.插入一个节点\n    6.退出" << endl;
 		cin >> b;
 		if (b == 1)
 		{
@@ -104,7 +102,7 @@ int main()
 		}
 		if (b == 4)
 		{
-			cout << "请输入前后结点，权值，网络号，子网掩码：\n";
+			cout << "请输入前后结点，权值，网络号：\n";
 			ofstream fout("duru2.txt", ofstream::app);
 			char str[1024];
 			//cin.ignore();
@@ -128,11 +126,10 @@ int main()
 			word >> y;//路由终点 
 			word >> z;//权值 
 			word >> m;//网络号 
-			word >> n;//子网掩码 
 			i = G.getnode(x);
 			j = G.getnode(y);
 			weight = z;
-			G.insertEdge(i, j, weight, m, n);
+			G.insertEdge(i, j, weight, m);
 		}
 		fin.clear();
 		fin.close();

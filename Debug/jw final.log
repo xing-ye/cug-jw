@@ -1,9 +1,22 @@
-﻿生成启动时间为 2018/12/4 12:53:07。
+﻿生成启动时间为 2018/12/4 14:23:49。
      1>项目“D:\git local hub\cug-jw\jw final.vcxproj”在节点 2 上(Build 个目标)。
-     1>Link:
+     1>ClCompile:
+         D:\visual studio2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>d:\git local hub\cug-jw\main.cpp(137): warning C4101: “h”: 未引用的局部变量
+     1>d:\git local hub\cug-jw\main.cpp(138): warning C4101: “r”: 未引用的局部变量
+       Link:
+         D:\visual studio2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\git local hub\cug-jw\Debug\jw final.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\git local hub\cug-jw\Debug\jw final.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\git local hub\cug-jw\Debug\jw final.lib" /MACHINE:X86 Debug\creatluyou.obj
+         Debug\insertedge.obj
+         Debug\insertnode.obj
+         Debug\main.obj
+         Debug\print.obj
+         Debug\removeedge.obj
+         Debug\removenode.obj
+         Debug\shortestway.obj
          jw final.vcxproj -> D:\git local hub\cug-jw\Debug\jw final.exe
      1>已完成生成项目“D:\git local hub\cug-jw\jw final.vcxproj”(Build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:00.21
+已用时间 00:00:00.72

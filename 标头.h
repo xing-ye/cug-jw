@@ -30,7 +30,7 @@ public:
 	Graphcnt(int sz);
 	int getValue(int v1, int v2);
 	bool insertnode();//插入一个结点 
-	bool insertEdge(int v1, int v2, int cost, string v3, string v4);//插入一条边 
+	bool insertEdge(int v1, int v2, int cost, string v3);//插入一条边 
 	int getfnode(int v);//v的第一个相邻结点
 	int getnextnode(int v, int w);
 	bool removenode(int v);
