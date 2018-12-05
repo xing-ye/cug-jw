@@ -20,11 +20,10 @@ int main()
 		word >> x;//路由起点 
 		word >> y;//路由终点 
 		word >> z;//权值 
-		word >> m;//网络号 
 		i = G.getnode(x);
 		j = G.getnode(y);
 		weight = z;
-		G.insertEdge(i, j, weight, m);
+		G.insertEdge(i, j, weight);
 	}
 
 	fin.clear();
@@ -102,7 +101,7 @@ int main()
 		}
 		if (b == 4)
 		{
-			cout << "请输入前后结点，权值，网络号：\n";
+			cout << "请输入前后结点，权值：\n";
 			ofstream fout("duru2.txt", ofstream::app);
 			char str[1024];
 			//cin.ignore();
@@ -117,7 +116,6 @@ int main()
 			string x = "";
 			string y = "";
 			string m = "";
-			string n = "";
 			int z;
 		while (fin.getline(line, sizeof(line)))
 		{
@@ -125,11 +123,10 @@ int main()
 			word >> x;//路由起点 
 			word >> y;//路由终点 
 			word >> z;//权值 
-			word >> m;//网络号 
 			i = G.getnode(x);
 			j = G.getnode(y);
 			weight = z;
-			G.insertEdge(i, j, weight, m);
+			G.insertEdge(i, j, weight);
 		}
 		fin.clear();
 		fin.close();
@@ -161,6 +158,7 @@ int main()
 			}
 			fin.clear();
 			fin.close();
+            
 			cout << "插入结点成功" << endl;
 		}
 
