@@ -1,4 +1,4 @@
-#include"БъЭЗ.h"
+#include"removenode.h"
 bool Graphcnt::removenode(int v)
 {
 	if (v<0 || v >= numnode)

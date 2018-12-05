@@ -1,4 +1,4 @@
-#include"标头.h"
+#include"shortestway.h"
 void shortestway(Graphcnt& G, int v, int dist[], int path[])
 {//Graph是一个带权有向图，本算法建立一个数组，dist[j],0<=j<n;是当前求到的从顶点v到顶点j的最短路径长度，同时用数组path存放求到的最短路径
 	int n = G.numnode;

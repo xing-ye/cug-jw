@@ -15,7 +15,28 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="标头.h">
+    <ClInclude Include="createluyou.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="insertedge.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="insertnode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="print.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="removeedge.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="removenode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="shortestway.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

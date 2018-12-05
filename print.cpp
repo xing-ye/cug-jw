@@ -1,4 +1,4 @@
-#include"标头.h"
+#include"print.h"
 void Print(Graphcnt& G, int v, int dist[], int path[])
 {
 	//输出path数组中存储的图G从顶点v到其余各顶点的路径和距离

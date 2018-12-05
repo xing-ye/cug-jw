@@ -1,4 +1,4 @@
-#include"标头.h"
+#include"insertnode.h"
 bool Graphcnt::insertnode()//插入一个结点 
 {
 	ifstream fin("duru1.txt", std::ios::in);

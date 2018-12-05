@@ -78,7 +78,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="标头.h" />
+    <ClInclude Include="createluyou.h" />
+    <ClInclude Include="insertedge.h" />
+    <ClInclude Include="insertnode.h" />
+    <ClInclude Include="print.h" />
+    <ClInclude Include="removeedge.h" />
+    <ClInclude Include="removenode.h" />
+    <ClInclude Include="shortestway.h" />
+    <ClInclude Include="main.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="creatluyou.cpp" />

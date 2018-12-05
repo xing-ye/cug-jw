@@ -1,4 +1,4 @@
-#include"БъЭЗ.h"
+#include"insertedge.h"
 bool Graphcnt::insertEdge(int v1, int v2, int cost, string v3)
 {
 

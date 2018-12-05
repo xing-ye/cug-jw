@@ -1,4 +1,4 @@
-#include"БъЭЗ.h"
+#include"main.h"
 int DefaultVertices = 30;
 using namespace std;
 int main()
